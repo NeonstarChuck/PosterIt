@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KassaScen.unity
     guid: 7bbb9f39f2ab648afa4910f485ee4834
+  - enabled: 1
+    path: Assets/Scenes/TrafficLights.unity
+    guid: e0b4498d60d57244ab9030d4024ffb88
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
+    guid: f921c94c78abd5543acc641b4e9f2d49
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6f677588e8a16474694cbca77697353c, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9d7e1c5a065fc47b3b033f94db012e3b, type: 2}
