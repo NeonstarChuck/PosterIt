@@ -1052,6 +1052,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2890832590633613802, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890832590633613802, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890832590633613802, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 6968726517859155481, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       propertyPath: m_Name
       value: TrafficLights
