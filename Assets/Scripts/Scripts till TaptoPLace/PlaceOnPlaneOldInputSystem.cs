@@ -1,84 +1,118 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using System.Collections.Generic;
 
-
-/// <summary>
-/// For tutorial video, see my YouTube channel: <seealso href="https://www.youtube.com/@xiennastudio">YouTube channel</seealso>
-/// How to use this script:
-/// - Add ARPlaneManager to XROrigin GameObject.
-/// - Add ARRaycastManager to XROrigin GameObject.
-/// - Attach this script to XROrigin GameObject.
-/// - Add the prefab that will be spawned to the <see cref="placedPrefab"/>
-///
-/// Touch to place the <see cref="placedPrefab"/> object on the touch position.
-/// Will only placed the object if the touch position is on detected trackables.
-/// Move the existing spawned object on the touch position.
-/// Using Unity old input system.
-/// </summary>
-[HelpURL("https://youtu.be/HkNVp04GOEI")]
 [RequireComponent(typeof(ARRaycastManager))]
-public class PlaceOnPlaneOldInputSystem : MonoBehaviour
+public class PlaceOnWallOldInputSystem : MonoBehaviour
 {
-   /// <summary>
-   /// The prefab that will be instantiated on touch.
-   /// </summary>
-   [SerializeField]
-   [Tooltip("Instantiates this prefab on a plane at the touch location.")]
-   GameObject placedPrefab;
+    [SerializeField]
+    [Tooltip("Instantiates this prefab on a wall at the touch location.")]
+    GameObject placedPrefab;
 
+    public Vector2 posterSize;
 
-   /// <summary>
-   /// The instantiated object.
-   /// </summary>
-   GameObject spawnedObject;
+    GameObject spawnedObject;
+    ARRaycastManager aRRaycastManager;
+    ARPlaneManager arPlaneManager;
+    List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    bool isMoving = false;
+    bool hasPlacedPoster = false;
 
+    void Awake()
+    {
+        aRRaycastManager = GetComponent<ARRaycastManager>();
+        arPlaneManager = GetComponent<ARPlaneManager>();
 
-   ARRaycastManager aRRaycastManager;
-   List<ARRaycastHit> hits = new List<ARRaycastHit>();
+        // Load the poster size selected in the previous scene
+        float width = PlayerPrefs.GetFloat("PosterWidth", 0.7f);
+        float height = PlayerPrefs.GetFloat("PosterHeight", 0.7f);
+        posterSize = new Vector2(width, height);
+    }
 
+    void Update()
+    {
+        if (Input.touchCount == 0)
+            return;
 
-   void Awake()
-   {
-       aRRaycastManager = GetComponent<ARRaycastManager>();
-   }
+        Touch touch = Input.GetTouch(0);
 
+        if (hasPlacedPoster)
+        {
+            HandlePosterMovement(touch);
+            return;
+        }
 
-   void Update()
-   {
-       // Check if there is existing touch.
-       if (Input.touchCount == 0)
-           return;
+        if (aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+        {
+            var hitPose = hits[0].pose;
+            var trackableId = hits[0].trackableId;
+            var plane = arPlaneManager.GetPlane(trackableId);
 
+            if (plane != null && IsWallPlane(plane))
+            {
+                if (spawnedObject == null)
+                {
+                    // First placement
+                    spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
+                    SetPosterScale(spawnedObject);
+                    spawnedObject.transform.forward = plane.normal * -1f; // Use multiplication instead of negation
+                    hasPlacedPoster = true;
+                    StopPlaneDetectionAndHidePlanes();
+                }
+            }
+        }
+    }
 
-       // Check if the raycast hit any trackables.
-       if (aRRaycastManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon))
-       {
-           // Raycast hits are sorted by distance, so the first hit means the closest.
-           var hitPose = hits[0].pose;
+    void HandlePosterMovement(Touch touch)
+    {
+        if (touch.phase == TouchPhase.Began)
+        {
+            // Check if we're touching the spawned object
+            Ray ray = Camera.main.ScreenPointToRay(touch.position);
+            RaycastHit hit;
+            if (spawnedObject != null && spawnedObject.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity))
+            {
+                isMoving = true;
+            }
+        }
 
+        if (isMoving && aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+        {
+            var hitPose = hits[0].pose;
+            spawnedObject.transform.position = hitPose.position;
+            spawnedObject.transform.forward = hitPose.rotation * Vector3.back; // Use Vector3.back instead of negating
+        }
 
-           // Check if there is already spawned object. If there is none, instantiated the prefab.
-           if (spawnedObject == null)
-           {
-               spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
-           }
-           else
-           {
-               // Change the spawned object position and rotation to the touch position.
-               spawnedObject.transform.position = hitPose.position;
-               spawnedObject.transform.rotation = hitPose.rotation;
-           }
+        if (touch.phase == TouchPhase.Ended)
+        {
+            isMoving = false;
+        }
+    }
 
+    bool IsWallPlane(ARPlane plane)
+    {
+        // Check if the plane's normal is roughly horizontal
+        return Vector3.Dot(plane.normal, Vector3.up) < 0.1f;
+    }
 
-           // To make the spawned object always look at the camera. Delete if not needed.
-           Vector3 lookPos = Camera.main.transform.position - spawnedObject.transform.position;
-           lookPos.y = 0;
-           spawnedObject.transform.rotation = Quaternion.LookRotation(lookPos);
-       }
-   }
+    void SetPosterScale(GameObject poster)
+    {
+        // Set the scale to ensure the poster is the specified size
+        poster.transform.localScale = new Vector3(posterSize.x, posterSize.y, 0.01f);
+    }
+
+    void StopPlaneDetectionAndHidePlanes()
+    {
+        // Stop plane detection
+        arPlaneManager.enabled = false;
+
+        // Hide all existing planes
+        foreach (var plane in arPlaneManager.trackables)
+        {
+            plane.gameObject.SetActive(false);
+        }
+    }
 
     public GameObject GetSpawnedObject()
     {

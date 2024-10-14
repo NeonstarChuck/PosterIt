@@ -607,9 +607,6 @@ GameObject:
   - component: {fileID: 1143758412}
   - component: {fileID: 1143758411}
   - component: {fileID: 1143758410}
-  - component: {fileID: 1143758415}
-  - component: {fileID: 1143758414}
-  - component: {fileID: 1143758413}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -652,57 +649,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143758409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 969.88165, y: 1562.0065, z: 340.30463}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -344.38568, y: -376.04187, z: 1075.3992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1599018720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1143758413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143758409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RaycastPrefab: {fileID: 0}
---- !u!114 &1143758414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143758409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 0}
-  m_DetectionMode: -1
---- !u!114 &1143758415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143758409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
-  m_OriginBaseGameObject: {fileID: 1143758409}
-  m_CameraFloorOffsetObject: {fileID: 0}
-  m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
 --- !u!1 &1179430261
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,10 +756,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1872878102736068955, guid: 639d9297146110048a7700b5fd90ca4d, type: 3}
+      propertyPath: m_RaycastPrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2364533308341563333, guid: 639d9297146110048a7700b5fd90ca4d, type: 3}
       propertyPath: m_Name
       value: XR Origin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4501522151594080114, guid: 639d9297146110048a7700b5fd90ca4d, type: 3}
+      propertyPath: m_PlanePrefab
+      value: 
+      objectReference: {fileID: 1585201990951412, guid: d16dd8da7e4ccbe42b1b4a344a72ecbb, type: 3}
     - target: {fileID: 4625735536998804341, guid: 639d9297146110048a7700b5fd90ca4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1314.2673
@@ -853,9 +814,17 @@ PrefabInstance:
       objectReference: {fileID: 6725800110782275824, guid: 8406959899592c4418da860abfcfa581, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4625735536998804341, guid: 639d9297146110048a7700b5fd90ca4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1143758412}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 639d9297146110048a7700b5fd90ca4d, type: 3}
+--- !u!4 &1599018720 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4625735536998804341, guid: 639d9297146110048a7700b5fd90ca4d, type: 3}
+  m_PrefabInstance: {fileID: 1241139699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1719924528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,4 +980,3 @@ SceneRoots:
   - {fileID: 538114139}
   - {fileID: 104621966}
   - {fileID: 1241139699}
-  - {fileID: 1143758412}
