@@ -28,8 +28,8 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
         arPlaneManager.requestedDetectionMode = PlaneDetectionMode.Vertical;
 
         // Load the poster size selected in the previous scene
-        float width = PlayerPrefs.GetFloat("PosterWidth", 0.7f);
-        float height = PlayerPrefs.GetFloat("PosterHeight", 0.7f);
+        float width = PlayerPrefs.GetFloat("PosterWidth", 0.6f);  // Default to 60x90 cm if no selection is made
+        float height = PlayerPrefs.GetFloat("PosterHeight", 0.9f); // Default to 60x90 cm if no selection is made
         posterSize = new Vector2(width, height);
     }
 
