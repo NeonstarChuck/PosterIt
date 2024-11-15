@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class SizeSelectorManager : MonoBehaviour
 {
-    public Button size90x70Button;
-    public Button size75x50Button;
-    public Button size120x90Button;
+    public Button size120x90Button;  // Button for 120x90 size
+    public Button size90x70Button;   // Button for 90x70 size
+    public Button size75x50Button;   // Button for 75x50 size
 
     private Button currentlySelectedButton;
     
@@ -15,14 +15,14 @@ public class SizeSelectorManager : MonoBehaviour
 
     private void Start()
     {
-        size90x70Button.onClick.AddListener(() => OnButtonClicked(size90x70Button, 0.9f, 0.7f));
-        size75x50Button.onClick.AddListener(() => OnButtonClicked(size75x50Button, 0.75f, 0.5f));
-        size120x90Button.onClick.AddListener(() => OnButtonClicked(size120x90Button, 1.2f, 0.9f));
+        size120x90Button.onClick.AddListener(() => OnButtonClicked(size120x90Button, 0.6f, 0.9f)); // 60x90 cm
+        size90x70Button.onClick.AddListener(() => OnButtonClicked(size90x70Button, 0.4f, 0.6f));   // 40x60 cm
+        size75x50Button.onClick.AddListener(() => OnButtonClicked(size75x50Button, 0.2f, 0.3f));   // 20x30 cm
 
         // Initialize all buttons to normal color
+        SetButtonColor(size120x90Button, normalColor);
         SetButtonColor(size90x70Button, normalColor);
         SetButtonColor(size75x50Button, normalColor);
-        SetButtonColor(size120x90Button, normalColor);
     }
 
     private void OnButtonClicked(Button clickedButton, float width, float height)
