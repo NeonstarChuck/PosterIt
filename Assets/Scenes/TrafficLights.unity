@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e291c1ae4deb414797d342c433bdaac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size120x90Button: {fileID: 657818189}
   size90x70Button: {fileID: 1886459979}
   size75x50Button: {fileID: 231694603}
-  size120x90Button: {fileID: 657818189}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!4 &6713827
@@ -3347,6 +3347,7 @@ PrefabInstance:
     - {fileID: 942738281273175286, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
     - {fileID: 4640701027385735619, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
     - {fileID: 4478221064618491563, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
+    - {fileID: 2628189177162968492, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8616088622365178581, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       insertIndex: -1

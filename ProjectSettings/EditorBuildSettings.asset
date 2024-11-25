@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenuScene.unity
+    path: Assets/Scenes/Kategorier/CityPage.unity
     guid: ffe8ee56926934c05a288a44d1cf3b53
   - enabled: 1
     path: "Assets/Scenes/Best\xE4llaPosterScene.unity"
