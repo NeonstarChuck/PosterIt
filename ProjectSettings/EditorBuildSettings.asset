@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: f921c94c78abd5543acc641b4e9f2d49
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1201810b66b61451f9d0db67606cb7fd
+  - enabled: 1
+    path: Assets/Scenes/Kategorier/SportPage.unity
+    guid: ad793bf52e3154344b33f90bc7b137cf
+  - enabled: 1
+    path: Assets/Scenes/ProduktSidor/City/RioDeJaniero.unity
+    guid: e163296c84d782c4b9a4fc7ecdb84211
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6f677588e8a16474694cbca77697353c, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9d7e1c5a065fc47b3b033f94db012e3b, type: 2}
