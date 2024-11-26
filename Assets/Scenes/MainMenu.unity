@@ -2126,12 +2126,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5846548231372351299, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       propertyPath: m_fontSize
-      value: 70
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5846548231372351299, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 75a018ea994894ddfaf5e17b38545090, type: 2}
     - target: {fileID: 5846548231372351299, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       propertyPath: m_fontStyle
       value: 1
@@ -2150,12 +2150,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5846548231372351299, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       propertyPath: m_fontSizeBase
-      value: 70
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5846548231372351299, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 1894780099509017881, guid: 75a018ea994894ddfaf5e17b38545090, type: 2}
     - target: {fileID: 5846548231372351299, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
@@ -2394,6 +2394,7 @@ PrefabInstance:
     - {fileID: 4681135896631537533, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
     - {fileID: 4640701027385735619, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
     - {fileID: 4478221064618491563, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
+    - {fileID: 2149136378844416617, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8616088622365178581, guid: 2874f4953583a0e4ebfda8537b735d11, type: 3}
       insertIndex: 1

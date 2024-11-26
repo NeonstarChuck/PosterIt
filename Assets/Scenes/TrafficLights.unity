@@ -502,6 +502,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: da3ecb7c205684508ba4b3f18581b527, type: 3}
+    - target: {fileID: 5807304548018685448, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807304548018685448, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 75a018ea994894ddfaf5e17b38545090, type: 2}
+    - target: {fileID: 5807304548018685448, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807304548018685448, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1894780099509017881, guid: 75a018ea994894ddfaf5e17b38545090, type: 2}
+    - target: {fileID: 5807304548018685448, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6657091081966381705, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -591,7 +611,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 384173704}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2046859859003779874, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3373557394389081727, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
