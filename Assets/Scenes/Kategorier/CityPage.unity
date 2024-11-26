@@ -210,6 +210,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7829613603237559016, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829613603237559016, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829613603237559016, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1833967500}
+    - target: {fileID: 7829613603237559016, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829613603237559016, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829613603237559016, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829613603237559016, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8049379914058510116, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
       propertyPath: m_SizeDelta.y
       value: 200
@@ -246,9 +274,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 571963031}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6109033595826435284, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1833967500}
     - targetCorrespondingSourceObject: {fileID: 3692857382574673460, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 111894085}
+    - targetCorrespondingSourceObject: {fileID: 3692857382574673460, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 111894088}
+    - targetCorrespondingSourceObject: {fileID: 3692857382574673460, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 111894087}
   m_SourcePrefab: {fileID: 100100000, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
 --- !u!224 &111894083 stripped
 RectTransform:
@@ -273,6 +310,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: RioDeJaniero
+--- !u!114 &111894086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3382420660154592342, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+  m_PrefabInstance: {fileID: 111894082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111894084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &111894087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111894084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551adc3b02a05df4387b0b570a870257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &111894088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111894084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 111894086}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 111894085}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &207523185
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +989,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1833967495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6109033595826435284, guid: 926e3f8d1697c4f318314e9fc6fd907a, type: 3}
+  m_PrefabInstance: {fileID: 111894082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1833967500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833967495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6813f8911c8e2c94a872ca7454303d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: MainMenu
 --- !u!1 &2034140085
 GameObject:
   m_ObjectHideFlags: 0
