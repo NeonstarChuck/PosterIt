@@ -498,10 +498,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1698824043452780655, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c9aedaeaad76a4905a72451ebac9cce1, type: 3}
     - target: {fileID: 2315946890775126712, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: da3ecb7c205684508ba4b3f18581b527, type: 3}
+      objectReference: {fileID: 21300000, guid: c9aedaeaad76a4905a72451ebac9cce1, type: 3}
+    - target: {fileID: 5311631135434504254, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: kontaktButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5807304548018685448, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_fontSize
       value: 50
@@ -606,6 +614,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8609367557605710420, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c9aedaeaad76a4905a72451ebac9cce1, type: 3}
     - target: {fileID: 9164550130772526517, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Camera
       value: 
@@ -613,6 +625,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2046859859003779874, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+    - {fileID: 9145346734290209879, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3373557394389081727, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
@@ -636,7 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6813f8911c8e2c94a872ca7454303d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MainMenu
+  sceneToLoad: RealMainMenu
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
