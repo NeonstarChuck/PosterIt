@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6813f8911c8e2c94a872ca7454303d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: CityPage
+  sceneToLoad: CityPage1
 --- !u!114 &21923633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101.430176, y: -122.527466}
+  m_AnchoredPosition: {x: 101.430176, y: -121.7161}
   m_SizeDelta: {x: 250, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470206987
@@ -2183,6 +2183,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: da3ecb7c205684508ba4b3f18581b527, type: 3}
+    - target: {fileID: 4042290612368134817, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5311631135434504254, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: kontaktButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5807304548018685448, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_fontSize
       value: 50
@@ -2206,6 +2214,10 @@ PrefabInstance:
     - target: {fileID: 6657091081966381705, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428181483581260449, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 8513724038044277662, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Pivot.x

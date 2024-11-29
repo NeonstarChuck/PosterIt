@@ -506,6 +506,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c9aedaeaad76a4905a72451ebac9cce1, type: 3}
+    - target: {fileID: 4042290612368134817, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220581037086366900, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220581037086366900, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5311631135434504254, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: kontaktButton
       value: 
@@ -533,6 +545,10 @@ PrefabInstance:
     - target: {fileID: 6657091081966381705, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428181483581260449, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 8513724038044277662, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Pivot.x
