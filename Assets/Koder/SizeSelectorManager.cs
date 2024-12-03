@@ -3,52 +3,60 @@ using UnityEngine.UI;
 
 public class SizeSelectorManager : MonoBehaviour
 {
-    public Button size120x90Button;  // Button for 120x90 size
-    public Button size90x70Button;   // Button for 90x70 size
-    public Button size75x50Button;   // Button for 75x50 size
+    public Button size70x100Button; // Button for 70x100 size
+    public Button size50x70Button; // Button for 50x70 size
+    public Button size30x40Button; // Button for 30x40 size
 
     private Button currentlySelectedButton;
-    
+
     // Colors for button states
     public Color normalColor = Color.white;
     public Color selectedColor = Color.yellow;
 
     private void Start()
     {
-        size120x90Button.onClick.AddListener(() => OnButtonClicked(size120x90Button, 0.6f, 0.9f)); // 60x90 cm
-        size90x70Button.onClick.AddListener(() => OnButtonClicked(size90x70Button, 0.4f, 0.6f));   // 40x60 cm
-        size75x50Button.onClick.AddListener(() => OnButtonClicked(size75x50Button, 0.2f, 0.3f));   // 20x30 cm
+        size70x100Button.onClick.AddListener(() => OnButtonClicked(size70x100Button, 0.7f, 1.0f));
+        size50x70Button.onClick.AddListener(() => OnButtonClicked(size50x70Button, 0.5f, 0.7f));
+        size30x40Button.onClick.AddListener(() => OnButtonClicked(size30x40Button, 0.3f, 0.4f));
 
-        // Initialize all buttons to normal color
-        SetButtonColor(size120x90Button, normalColor);
-        SetButtonColor(size90x70Button, normalColor);
-        SetButtonColor(size75x50Button, normalColor);
+        // Initialize button colors
+        ResetAllButtonColors();
     }
 
     private void OnButtonClicked(Button clickedButton, float width, float height)
     {
-        if (currentlySelectedButton != null && currentlySelectedButton != clickedButton)
+        if (currentlySelectedButton != clickedButton)
         {
-            // Reset the color of the previously selected button
-            SetButtonColor(currentlySelectedButton, normalColor);
+            // Deselect the previous button
+            if (currentlySelectedButton != null)
+            {
+                SetButtonColor(currentlySelectedButton, normalColor);
+            }
+
+            // Select the new button
+            currentlySelectedButton = clickedButton;
+            SetButtonColor(clickedButton, selectedColor);
+
+            // Save poster size
+            PlayerPrefs.SetFloat("PosterWidth", width);
+            PlayerPrefs.SetFloat("PosterHeight", height);
         }
-
-        // Set the color of the clicked button
-        SetButtonColor(clickedButton, selectedColor);
-
-        // Update the currently selected button
-        currentlySelectedButton = clickedButton;
-
-        // Set the poster size
-        PlayerPrefs.SetFloat("PosterWidth", width);
-        PlayerPrefs.SetFloat("PosterHeight", height);
     }
 
     private void SetButtonColor(Button button, Color color)
     {
-        ColorBlock colors = button.colors;
-        colors.normalColor = color;
-        colors.selectedColor = color;
-        button.colors = colors;
+        // Directly update the button's image color
+        if (button != null && button.GetComponent<Image>() != null)
+        {
+            button.GetComponent<Image>().color = color;
+        }
+    }
+
+    private void ResetAllButtonColors()
+    {
+        // Reset all buttons to the normal color
+        SetButtonColor(size70x100Button, normalColor);
+        SetButtonColor(size50x70Button, normalColor);
+        SetButtonColor(size30x40Button, normalColor);
     }
 }

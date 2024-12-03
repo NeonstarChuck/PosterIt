@@ -17,7 +17,6 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
     ARPlaneManager arPlaneManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     bool isMoving = false;
-    bool hasPlacedPoster = false;
 
     void Awake()
     {
@@ -28,8 +27,8 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
         arPlaneManager.requestedDetectionMode = PlaneDetectionMode.Vertical;
 
         // Load the poster size selected in the previous scene
-        float width = PlayerPrefs.GetFloat("PosterWidth", 0.6f);  // Default to 60x90 cm if no selection is made
-        float height = PlayerPrefs.GetFloat("PosterHeight", 0.9f); // Default to 60x90 cm if no selection is made
+        float width = PlayerPrefs.GetFloat("PosterWidth", 0.5f);  // Default to 60x90 cm if no selection is made
+        float height = PlayerPrefs.GetFloat("PosterHeight", 0.7f); // Default to 60x90 cm if no selection is made
         posterSize = new Vector2(width, height);
     }
 
@@ -40,12 +39,18 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
 
         Touch touch = Input.GetTouch(0);
 
-        if (hasPlacedPoster)
+        if (spawnedObject != null)
         {
             HandlePosterMovement(touch);
-            return;
         }
+        else
+        {
+            TryPlacePoster(touch);
+        }
+    }
 
+    void TryPlacePoster(Touch touch)
+    {
         if (aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
         {
             foreach (var hit in hits)
@@ -54,22 +59,17 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
 
                 if (plane != null && IsWallPlane(plane))
                 {
-                    if (spawnedObject == null)
+                    spawnedObject = Instantiate(placedPrefab, hit.pose.position, hit.pose.rotation);
+                    SetPosterScale(spawnedObject);
+                    spawnedObject.transform.forward = plane.normal * -1f;
+                    StopPlaneDetectionAndHidePlanes();
+
+                    if (Debug.isDebugBuild)
                     {
-                        // First placement
-                        spawnedObject = Instantiate(placedPrefab, hit.pose.position, hit.pose.rotation);
-                        SetPosterScale(spawnedObject);
-                        spawnedObject.transform.forward = plane.normal * -1f;
-                        hasPlacedPoster = true;
-                        StopPlaneDetectionAndHidePlanes();
-                        
-                        if (Debug.isDebugBuild)
-                        {
-                            Debug.Log("Poster placed on wall");
-                        }
-                        
-                        break; // Exit the loop after placing the poster
+                        Debug.Log("Poster placed on wall");
                     }
+
+                    break; // Exit the loop after placing the poster
                 }
             }
         }
@@ -79,7 +79,7 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
     {
         if (touch.phase == TouchPhase.Began)
         {
-            // Check if we're touching the spawned object
+            // Check if the touch is over the poster
             Ray ray = Camera.main.ScreenPointToRay(touch.position);
             RaycastHit hit;
             if (spawnedObject != null && spawnedObject.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity))
@@ -88,11 +88,19 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
             }
         }
 
-        if (isMoving && aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+        if (isMoving && touch.phase == TouchPhase.Moved)
         {
-            var hitPose = hits[0].pose;
-            spawnedObject.transform.position = hitPose.position;
-            spawnedObject.transform.forward = hitPose.rotation * Vector3.back;
+            if (aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+            {
+                var hitPose = hits[0].pose;
+                spawnedObject.transform.position = hitPose.position;
+                spawnedObject.transform.forward = hitPose.rotation * Vector3.back;
+
+                if (Debug.isDebugBuild)
+                {
+                    Debug.Log("Poster moved to new position");
+                }
+            }
         }
 
         if (touch.phase == TouchPhase.Ended)
@@ -106,16 +114,9 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
         // Check if the plane's normal is close to horizontal (wall)
         float angleThreshold = 5f; // Degrees
         float angle = Vector3.Angle(plane.normal, Vector3.up);
-        
+
         // A wall should be close to 90 degrees from the up vector
-        bool isWall = angle > (90 - angleThreshold) && angle < (90 + angleThreshold);
-        
-        if (isWall && Debug.isDebugBuild)
-        {
-            Debug.Log($"Detected wall plane. Angle: {angle}");
-        }
-        
-        return isWall;
+        return angle > (90 - angleThreshold) && angle < (90 + angleThreshold);
     }
 
     void SetPosterScale(GameObject poster)

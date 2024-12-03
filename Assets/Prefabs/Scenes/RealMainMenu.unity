@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e291c1ae4deb414797d342c433bdaac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size120x90Button: {fileID: 0}
-  size90x70Button: {fileID: 0}
-  size75x50Button: {fileID: 0}
+  size70x100Button: {fileID: 0}
+  size50x70Button: {fileID: 0}
+  size30x40Button: {fileID: 0}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!4 &6713827
@@ -436,6 +436,10 @@ PrefabInstance:
     - target: {fileID: 620583330863391697, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
       propertyPath: m_Name
       value: Canvas Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106884043809982915, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
+      propertyPath: sceneToLoad
+      value: CityPage
       objectReference: {fileID: 0}
     - target: {fileID: 8251448144962666172, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
       propertyPath: m_Camera
