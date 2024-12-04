@@ -900,6 +900,7 @@ GameObject:
   - component: {fileID: 1719924531}
   - component: {fileID: 1719924530}
   - component: {fileID: 1719924533}
+  - component: {fileID: 1719924534}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -971,9 +972,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1719924533}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: GoToPreviousScene
+      - m_Target: {fileID: 1719924534}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1033,6 +1034,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551adc3b02a05df4387b0b570a870257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1719924534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719924528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6813f8911c8e2c94a872ca7454303d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Clouds
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
