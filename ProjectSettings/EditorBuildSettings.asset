@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Prefabs/Scenes/Kategorier/CityPage.unity
     guid: ffe8ee56926934c05a288a44d1cf3b53
   - enabled: 0
+    path: Assets/Prefabs/Scenes/Kategorier/yr/CityPage 1.unity
+    guid: a1622c57c4711b649b6306bb8948f72a
+  - enabled: 0
     path: Assets/Scenes/SkapaEgenPosterScene.unity
     guid: d3047d71d61af4804a1ba84618dec387
   - enabled: 0
@@ -51,8 +54,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Kategorier/CityPage1.unity
     guid: 49df9181069b8c5479b755427f9bf6f6
   - enabled: 1
-    path: Assets/Prefabs/Scenes/ARScene_Rio.unity
+    path: Assets/Prefabs/Scenes/AR_City/ARScene_Rio.unity
     guid: fa222a1a5969fd74abfeac55bc7c5aa8
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/ProduktSidor/City/CopenHagen.unity
+    guid: 7def656d1309b0049a4352055b8f4f02
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/ProduktSidor/City/HongKong.unity
+    guid: 01b20822757e9894e9e91ca32ba58794
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/ProduktSidor/City/NewYork.unity
+    guid: 49db2a1ff74226a4ea37ed7848cbacc6
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6f677588e8a16474694cbca77697353c, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9d7e1c5a065fc47b3b033f94db012e3b, type: 2}

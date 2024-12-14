@@ -45,10 +45,13 @@ public class SizeSelectorManager : MonoBehaviour
 
     private void SetButtonColor(Button button, Color color)
     {
-        // Directly update the button's image color
-        if (button != null && button.GetComponent<Image>() != null)
+        if (button != null)
         {
-            button.GetComponent<Image>().color = color;
+            ColorBlock cb = button.colors;  // Access the button's ColorBlock
+            cb.normalColor = color;        // Update the normal color
+            cb.highlightedColor = color;   // Update the highlighted color (optional)
+            cb.selectedColor = color;      // Update the selected color (optional)
+            button.colors = cb;            // Apply the changes
         }
     }
 
