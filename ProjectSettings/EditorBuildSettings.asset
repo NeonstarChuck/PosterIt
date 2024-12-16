@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Prefabs/Scenes/RealMainMenu.unity
     guid: 97acf325483bd4fa8b39f94a9b83da6a
   - enabled: 0
-    path: Assets/Prefabs/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 1201810b66b61451f9d0db67606cb7fd
   - enabled: 0
     path: "Assets/Scenes/Best\xE4llaPosterScene.unity"

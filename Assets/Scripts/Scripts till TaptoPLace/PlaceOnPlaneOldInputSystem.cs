@@ -65,38 +65,59 @@ public class PlaceOnWallOldInputSystem : MonoBehaviour
 
     void TryPlacePoster(Touch touch)
     {
-        hits.Clear();
-        if (aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+        if (touch.phase == TouchPhase.Began)
         {
-            foreach (var hit in hits)
+            hits.Clear();
+            if (aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
             {
-                var plane = arPlaneManager.GetPlane(hit.trackableId);
-
-                if (plane != null && IsWallPlane(plane))
+                foreach (var hit in hits)
                 {
-                    // Update UI text to "Found Plane" as soon as a valid plane is detected
-                    SetDetectionText("Found Plane");
+                    var plane = arPlaneManager.GetPlane(hit.trackableId);
 
-                    spawnedObject = Instantiate(placedPrefab, hit.pose.position, hit.pose.rotation);
-                    SetPosterScale(spawnedObject);
-                    spawnedObject.transform.forward = plane.normal * -1f; // Ensure it faces the wall
-                    StopPlaneDetectionAndHidePlanes();
+                    if (plane != null && IsWallPlane(plane))
+                    {
+                        // Update UI text to "Found Plane" as soon as a valid plane is detected
+                        SetDetectionText("Found Plane");
 
-                    Debug.Log("Poster placed on wall");
-                    
-                    break; // Exit the loop after placing the poster
+                        spawnedObject = Instantiate(placedPrefab, hit.pose.position, hit.pose.rotation);
+                        SetPosterScale(spawnedObject);
+                        spawnedObject.transform.forward = plane.normal * -1f; // Ensure it faces the wall
+                        StopPlaneDetectionAndHidePlanes();
+
+                        Debug.Log("Poster placed on wall");
+                        break; // Exit the loop after placing the poster
+                    }
                 }
             }
-        }
-        else
-        {
-            Debug.Log("No planes detected at touch position");
+            else
+            {
+                Debug.Log("No planes detected at touch position");
+            }
         }
     }
 
     void HandlePosterMovement(Touch touch)
     {
-        // Movement handling code remains the same
+        if (touch.phase == TouchPhase.Moved)
+        {
+            hits.Clear();
+            if (aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+            {
+                var hit = hits[0]; // Use the first hit result
+                var plane = arPlaneManager.GetPlane(hit.trackableId);
+
+                if (plane != null && IsWallPlane(plane))
+                {
+                    // Update the poster's position
+                    spawnedObject.transform.position = hit.pose.position;
+
+                    // Ensure it faces the wall
+                    spawnedObject.transform.forward = plane.normal * -1f;
+
+                    Debug.Log("Poster moved to a new position");
+                }
+            }
+        }
     }
 
     bool IsWallPlane(ARPlane plane)
