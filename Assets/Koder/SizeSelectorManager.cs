@@ -6,6 +6,7 @@ public class SizeSelectorManager : MonoBehaviour
     public Button size70x100Button; // Button for 70x100 size
     public Button size50x70Button; // Button for 50x70 size
     public Button size30x40Button; // Button for 30x40 size
+    public GameObject placedPrefab; // The prefab that will be resized
 
     private Button currentlySelectedButton;
 
@@ -25,21 +26,23 @@ public class SizeSelectorManager : MonoBehaviour
 
     private void OnButtonClicked(Button clickedButton, float width, float height)
     {
-        if (currentlySelectedButton != clickedButton)
+        if (currentlySelectedButton != null)
         {
-            // Deselect the previous button
-            if (currentlySelectedButton != null)
-            {
-                SetButtonColor(currentlySelectedButton, normalColor);
-            }
+            SetButtonColor(currentlySelectedButton, normalColor); // Reset the previous button's color
+        }
 
-            // Select the new button
-            currentlySelectedButton = clickedButton;
-            SetButtonColor(clickedButton, selectedColor);
+        // Select the new button
+        currentlySelectedButton = clickedButton;
+        SetButtonColor(clickedButton, selectedColor);
 
-            // Save poster size
-            PlayerPrefs.SetFloat("PosterWidth", width);
-            PlayerPrefs.SetFloat("PosterHeight", height);
+        // Save poster size
+        PlayerPrefs.SetFloat("PosterWidth", width);
+        PlayerPrefs.SetFloat("PosterHeight", height);
+
+        // Resize the instantiated poster
+        if (placedPrefab != null)
+        {
+            ResizePoster(width, height);
         }
     }
 
@@ -61,5 +64,15 @@ public class SizeSelectorManager : MonoBehaviour
         SetButtonColor(size70x100Button, normalColor);
         SetButtonColor(size50x70Button, normalColor);
         SetButtonColor(size30x40Button, normalColor);
+    }
+
+    private void ResizePoster(float width, float height)
+    {
+        // Assuming the 'placedPrefab' is the current instance of the poster
+        if (placedPrefab != null)
+        {
+            Vector3 newScale = new Vector3(width, height, placedPrefab.transform.localScale.z);
+            placedPrefab.transform.localScale = newScale;
+        }
     }
 }
