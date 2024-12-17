@@ -462,6 +462,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3040d1dbe65ef40738cddc91010b45ff, type: 3}
+    - target: {fileID: 2958563698038848640, guid: aca81248f4b681d448513729fa50f496, type: 3}
+      propertyPath: m_text
+      value: SE LIVE
+      objectReference: {fileID: 0}
     - target: {fileID: 3593209813034611045, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_text
       value: Hong Kong - 100kr
@@ -557,6 +561,10 @@ PrefabInstance:
     - target: {fileID: 5492650309940206792, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570296906842286212, guid: aca81248f4b681d448513729fa50f496, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5577035861492882690, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Sprite
@@ -697,7 +705,7 @@ MonoBehaviour:
   size30x40Button: {fileID: 1015047860}
   placedPrefab: {fileID: 0}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
-  selectedColor: {r: 0.4117647, g: 0.19215687, b: 0.18431373, a: 1}
+  selectedColor: {r: 0.6313726, g: 0.6117647, b: 0.6117647, a: 1}
 --- !u!1 &1059868657
 GameObject:
   m_ObjectHideFlags: 0
