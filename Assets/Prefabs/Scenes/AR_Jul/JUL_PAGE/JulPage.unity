@@ -437,15 +437,15 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 1c5d53df521874fbf8ac7ec746106aec, type: 3}
     - target: {fileID: 5250778057082598001, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: FerrisWheel
+      value: Gingerbreads
       objectReference: {fileID: 0}
     - target: {fileID: 5438931810135686508, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: Coffee
+      value: JingleBells
       objectReference: {fileID: 0}
     - target: {fileID: 5810971997655166159, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: City
+      value: ChristmasForest
       objectReference: {fileID: 0}
     - target: {fileID: 6484040735742586250, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Name
@@ -497,11 +497,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 708bd76060966413bacb7ceab7a13870, type: 3}
     - target: {fileID: 8825629624158570392, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: Clouds
+      value: ChristmasTree
       objectReference: {fileID: 0}
     - target: {fileID: 8895347134253777936, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: Christmas Forrest - 100kr
+      value: Christmas Forest - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 8895347134253777936, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_margin.z

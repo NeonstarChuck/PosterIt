@@ -616,7 +616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183692956851298527, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: sceneToLoad
-      value: ARScene_City
+      value: ARScene_JingleBells
       objectReference: {fileID: 0}
     - target: {fileID: 8084408098922141601, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Colors.m_PressedColor.b

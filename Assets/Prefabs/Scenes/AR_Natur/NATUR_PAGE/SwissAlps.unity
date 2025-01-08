@@ -310,7 +310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8521859230260096659, guid: f81ca6d543a6ed24c8f123db9e32edff, type: 3}
       propertyPath: sceneToLoad
-      value: MatPage
+      value: NaturPage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -477,7 +477,7 @@ PrefabInstance:
     - target: {fileID: 1890640830896268782, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2fbb85b78bb1d40f0b2394e62b9b415a, type: 3}
+      objectReference: {fileID: 21300000, guid: 54121c3513b34438f8646068d32652e6, type: 3}
     - target: {fileID: 2958563698038848640, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_text
       value: SE LIVE
@@ -485,18 +485,18 @@ PrefabInstance:
     - target: {fileID: 3282118950612948793, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f3be4e0e3abdb490f9487cef70a5c896, type: 3}
+      objectReference: {fileID: 21300000, guid: 23e77cfbda52b4c0aafcee5646292880, type: 3}
     - target: {fileID: 3593209813034611045, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_text
-      value: Pancakes - 100kr
+      value: Swiss Alps - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 3593209813034611045, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_fontSize
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3593209813034611045, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_fontSizeBase
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4553084711083663246, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Name
@@ -589,7 +589,7 @@ PrefabInstance:
     - target: {fileID: 5577035861492882690, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2fbb85b78bb1d40f0b2394e62b9b415a, type: 3}
+      objectReference: {fileID: 21300000, guid: 54121c3513b34438f8646068d32652e6, type: 3}
     - target: {fileID: 6616700835096632223, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
       value: 1
@@ -616,7 +616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183692956851298527, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: sceneToLoad
-      value: ARScene_Pancakes
+      value: ARScene_SwissAlps
       objectReference: {fileID: 0}
     - target: {fileID: 8084408098922141601, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_Colors.m_PressedColor.b

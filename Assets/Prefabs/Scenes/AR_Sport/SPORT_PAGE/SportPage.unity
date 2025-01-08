@@ -334,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 2064852181816122238, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 486b77e83b9e642099333abc6ada8108, type: 3}
+      objectReference: {fileID: 21300000, guid: 5d9d7ee17556a4274ad2a12d5d15ca1e, type: 3}
     - target: {fileID: 2476326882383604814, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 130
@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 3078718383528595591, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 54121c3513b34438f8646068d32652e6, type: 3}
+      objectReference: {fileID: 21300000, guid: 16a48da1f9fda4b3db84b2586295d684, type: 3}
     - target: {fileID: 3093390757295484620, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -434,7 +434,7 @@ PrefabInstance:
     - target: {fileID: 5172712876641647943, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 30a655183a87048b9906e9b03a5ee623, type: 3}
+      objectReference: {fileID: 21300000, guid: 0cc764cc8feb2456f9c2eba211fca004, type: 3}
     - target: {fileID: 5250778057082598001, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
       value: Savanna
@@ -502,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 8678218174492460422, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5bc200b0ed9d2404f97c632f1c44ed3d, type: 3}
+      objectReference: {fileID: 21300000, guid: e60f5cfa1a03346fbb59ab092aa1e665, type: 3}
     - target: {fileID: 8825629624158570392, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
       value: GrandCanyon
