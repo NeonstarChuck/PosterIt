@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/Scenes/KontaktScen.unity
     guid: 2558b67c02def4df7b31de061b16bfd7
   - enabled: 1
-    path: Assets/Prefabs/Scenes/Kategorier/CityPage.unity
+    path: Assets/Prefabs/Scenes/Ignorera/CityPage.unity
     guid: ffe8ee56926934c05a288a44d1cf3b53
   - enabled: 0
-    path: Assets/Prefabs/Scenes/Kategorier/yr/CityPage 1.unity
+    path: Assets/Prefabs/Scenes/Ignorera/yr/CityPage 1.unity
     guid: a1622c57c4711b649b6306bb8948f72a
   - enabled: 0
     path: Assets/Scenes/SkapaEgenPosterScene.unity
@@ -39,10 +39,10 @@ EditorBuildSettings:
     path: Assets/Prefabs/Scenes/Kategorier/SportPage.unity
     guid: ad793bf52e3154344b33f90bc7b137cf
   - enabled: 1
-    path: Assets/Prefabs/Scenes/ProduktSidor/City/RioDeJaniero.unity
+    path: Assets/Prefabs/Scenes/Ignorera1/City/RioDeJaniero.unity
     guid: e163296c84d782c4b9a4fc7ecdb84211
   - enabled: 0
-    path: Assets/Prefabs/Scenes/ProduktSidor/Abstrakt/Clouds.unity
+    path: Assets/Prefabs/Scenes/Ignorera1/Abstrakt/Clouds.unity
     guid: c7bf803e5459448e9ad48bba088ee146
   - enabled: 0
     path: Assets/Prefabs/Scenes/ARScene_Clouds.unity
@@ -57,13 +57,13 @@ EditorBuildSettings:
     path: Assets/Prefabs/Scenes/AR_City/ARScene_Rio.unity
     guid: fa222a1a5969fd74abfeac55bc7c5aa8
   - enabled: 1
-    path: Assets/Prefabs/Scenes/ProduktSidor/City/CopenHagen.unity
+    path: Assets/Prefabs/Scenes/Ignorera1/City/CopenHagen.unity
     guid: 7def656d1309b0049a4352055b8f4f02
   - enabled: 1
-    path: Assets/Prefabs/Scenes/ProduktSidor/City/HongKong.unity
+    path: Assets/Prefabs/Scenes/Ignorera1/City/HongKong.unity
     guid: 01b20822757e9894e9e91ca32ba58794
   - enabled: 1
-    path: Assets/Prefabs/Scenes/ProduktSidor/City/NewYork.unity
+    path: Assets/Prefabs/Scenes/Ignorera1/City/NewYork.unity
     guid: 49db2a1ff74226a4ea37ed7848cbacc6
   - enabled: 1
     path: Assets/Prefabs/Scenes/AR_City/ARScene_CopenHagen.unity
