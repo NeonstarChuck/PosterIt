@@ -1722,6 +1722,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 276375999093573609, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
+      propertyPath: m_text
+      value: KASSA
+      objectReference: {fileID: 0}
     - target: {fileID: 374023994075961560, guid: f370174e47f384e4eb6ea804d100f958, type: 3}
       propertyPath: m_Name
       value: Canvas Variant Variant
