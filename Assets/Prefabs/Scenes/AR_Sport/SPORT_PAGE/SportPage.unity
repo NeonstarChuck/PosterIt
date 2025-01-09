@@ -329,12 +329,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 858780848295614030, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: Savanna - 100kr
+      value: Tennis Ball - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 2064852181816122238, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5d9d7ee17556a4274ad2a12d5d15ca1e, type: 3}
+      objectReference: {fileID: 21300000, guid: fb00f8a19a55e44319cfa0500c8a64fd, type: 3}
     - target: {fileID: 2476326882383604814, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 130
@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 3078718383528595591, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 16a48da1f9fda4b3db84b2586295d684, type: 3}
+      objectReference: {fileID: 21300000, guid: b26300d5abbc544fba0adad17c66d671, type: 3}
     - target: {fileID: 3093390757295484620, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -437,15 +437,15 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 0cc764cc8feb2456f9c2eba211fca004, type: 3}
     - target: {fileID: 5250778057082598001, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: Savanna
+      value: TennisBall
       objectReference: {fileID: 0}
     - target: {fileID: 5438931810135686508, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: AmazonRainForest
+      value: FormulaCar
       objectReference: {fileID: 0}
     - target: {fileID: 5810971997655166159, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: SwissAlps
+      value: Basketball
       objectReference: {fileID: 0}
     - target: {fileID: 6484040735742586250, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Name
@@ -453,11 +453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6582888725400983185, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: Grand Canyon - 100kr
+      value: Baseball Stadium - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 7116849245625310076, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: Amazon Rainforest - 100kr
+      value: Formula Car - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 7116849245625310076, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_fontSize
@@ -505,11 +505,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e60f5cfa1a03346fbb59ab092aa1e665, type: 3}
     - target: {fileID: 8825629624158570392, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: sceneToLoad
-      value: GrandCanyon
+      value: BaseballStadium
       objectReference: {fileID: 0}
     - target: {fileID: 8895347134253777936, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: Swiss Alps - 100kr
+      value: Basketball - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 8895347134253777936, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_margin.z

@@ -329,7 +329,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 858780848295614030, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: FERRIS WHEEL- 100kr
+      value: Ferris Wheel - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 2064852181816122238, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
@@ -453,11 +453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6582888725400983185, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: CLOUDS - 100kr
+      value: Clouds - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 7116849245625310076, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: COFFEE - 100kr
+      value: Coffee - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 7227877732962847412, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8895347134253777936, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: CITY - 100kr
+      value: City - 100kr
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

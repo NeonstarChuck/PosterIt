@@ -329,7 +329,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 858780848295614030, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: COPENHAGEN- 100kr
+      value: Copenhagen - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 2064852181816122238, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_Sprite
@@ -443,9 +443,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Variant Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6582888725400983185, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
+      propertyPath: m_text
+      value: Rio - 100kr
+      objectReference: {fileID: 0}
     - target: {fileID: 7116849245625310076, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: NEW YORK - 100kr
+      value: New York - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 7227877732962847412, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -485,7 +489,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d9160fe69c1f944a9be8c0bfe797cf72, type: 3}
     - target: {fileID: 8895347134253777936, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: HONG KONG - 100kr
+      value: Hong Kong - 100kr
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

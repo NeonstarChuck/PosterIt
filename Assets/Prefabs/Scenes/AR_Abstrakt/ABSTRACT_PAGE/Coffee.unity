@@ -488,7 +488,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 83b190069598a9f459b93b010fad6f1d, type: 3}
     - target: {fileID: 3593209813034611045, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_text
-      value: Coffe - 100kr
+      value: Coffee - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 3593209813034611045, guid: aca81248f4b681d448513729fa50f496, type: 3}
       propertyPath: m_fontSize
@@ -905,6 +905,10 @@ PrefabInstance:
     - target: {fileID: 232049153577460293, guid: cb4712cb626369043a33600106779551, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 598286082273003319, guid: cb4712cb626369043a33600106779551, type: 3}
+      propertyPath: sceneToLoad
+      value: AbstractPage
       objectReference: {fileID: 0}
     - target: {fileID: 2811327153447000299, guid: cb4712cb626369043a33600106779551, type: 3}
       propertyPath: m_Name

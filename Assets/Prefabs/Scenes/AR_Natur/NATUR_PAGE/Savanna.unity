@@ -908,7 +908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 598286082273003319, guid: cb4712cb626369043a33600106779551, type: 3}
       propertyPath: sceneToLoad
-      value: MatPage
+      value: NaturPage
       objectReference: {fileID: 0}
     - target: {fileID: 2811327153447000299, guid: cb4712cb626369043a33600106779551, type: 3}
       propertyPath: m_Name

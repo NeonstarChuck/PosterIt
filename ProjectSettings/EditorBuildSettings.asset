@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KontaktScen.unity
     guid: 2558b67c02def4df7b31de061b16bfd7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Prefabs/Scenes/Ignorera/CityPage.unity
     guid: ffe8ee56926934c05a288a44d1cf3b53
   - enabled: 0
@@ -74,6 +74,144 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Prefabs/Scenes/AR_City/ARScene_NewYork.unity
     guid: 791c3680b6d61704fb30eff5b465c3b3
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ABSTRACT_PAGE/AbstractPage.unity
+    guid: ac51d6462a2914944ad2fb9bf2edc2e5
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ABSTRACT_PAGE/City.unity
+    guid: 2cd61501fb1694b48b46aa6968791135
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ABSTRACT_PAGE/Clouds.unity
+    guid: 80e8ee53d16093642a4bf06df7fef8a8
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ABSTRACT_PAGE/Coffee.unity
+    guid: 6ddddeb488ac1cb4c84da08ea5eb0d53
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ABSTRACT_PAGE/FerrisWheel.unity
+    guid: e4c2d252b81096d4ab95ec14124e08cb
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ARScene_City.unity
+    guid: 6c10b897e4c1e5a41b88767b5d69eba9
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ARScene_Clouds.unity
+    guid: f163cb0ad9bb5834eba4783cfeba1feb
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ARScene_Coffee.unity
+    guid: 4f42b208afea5fc4799c7b3b8b732a3b
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Abstrakt/ARScene_FerrisWheel.unity
+    guid: 5563681dbba71384a91e084be7cc7f04
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/JUL_PAGE/JulPage.unity
+    guid: 44c519d4b90062e4b84f411b37317d8a
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/JUL_PAGE/ChristmasForest.unity
+    guid: fe46f06a79fa2694d86b216c1c11bb45
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/JUL_PAGE/ChristmasTree.unity
+    guid: 29915a647e587c44aa1ec01ee781dfb6
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/JUL_PAGE/GingerBreads.unity
+    guid: 03fa65568acf0e44a82881ef2e8fcd5e
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/JUL_PAGE/JingleBells.unity
+    guid: c46a9dca1d4aad74d8b8114301c23592
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/ARScene_ChristmasForest.unity
+    guid: 1467388ce50ac1441a14719859c74445
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/ARScene_ChristmasTree.unity
+    guid: 5c29d81786765244cb87c859e62290e3
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/ARScene_Gingerbreads.unity
+    guid: 74f8dc6d1a012c644b1cb21e9429ee97
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Jul/ARScene_JingleBells.unity
+    guid: 581048827703e2e4f8a3ac660f338c34
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/MAT_PAGE/MatPage.unity
+    guid: 707e52d04cce99846a3b1552b5f798c1
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/MAT_PAGE/KeyLimePie.unity
+    guid: 07c3b76f04de65144a358d03992de40d
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/MAT_PAGE/Pancakes.unity
+    guid: 3441d03309efc194fa2e7eb0db49d58a
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/MAT_PAGE/Pizza.unity
+    guid: f5117e59283ac284bbc051918fe54781
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/MAT_PAGE/Sushi.unity
+    guid: e4010abd30c74374aba95d52b95c0364
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/ARScene_KeyLimePie.unity
+    guid: f1fd8d06686cf254e8255e69aac590c2
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/ARScene_Pancakes.unity
+    guid: 15a9c4d97c6238e4e9b081e231cfb581
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/ARScene_Pizza.unity
+    guid: 5e7da9860aa4aee4a99c1a6d00fa905c
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Mat/ARScene_Sushi.unity
+    guid: 21e7b5fdb93e0b34ea803db559d61b4b
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/NATUR_PAGE/NaturPage.unity
+    guid: ab19a0584562b07468e2f9481a1e3939
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/NATUR_PAGE/AmazonRainForest.unity
+    guid: e654558488e4d4b47b3d5320017d862c
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/NATUR_PAGE/GrandCanyon.unity
+    guid: 3968e80a8fb4fc5408a104355a8ca5ef
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/NATUR_PAGE/Savanna.unity
+    guid: bae65771d8b859543b0e982dc6c792f3
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/NATUR_PAGE/SwissAlps.unity
+    guid: b4b51710340d2b4469526a0d08edb624
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/ARScene_AmazonRainForest.unity
+    guid: 16f6a8699a7662c48b360cffdaaf6a85
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/ARScene_GrandCanyon.unity
+    guid: 7b9356e715e281249b460a7067ae852f
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/ARScene_Savanna.unity
+    guid: bc365c92707ebb141b5136a06c58bf69
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Natur/ARScene_SwissAlps.unity
+    guid: 34a1bdfef4b8da74f8a7ea0f778076d2
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/SPORT_PAGE/SportPage.unity
+    guid: 35937b017bb6c9b42b0556efb2b89570
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/SPORT_PAGE/BaseballStadium.unity
+    guid: 85df4d6003c24a54e95284518c604014
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/SPORT_PAGE/Basketball.unity
+    guid: 2a4c3a383d5174d45a61c3fbe7c91d8b
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/SPORT_PAGE/FormulaCar.unity
+    guid: ce8c4ce7548d0e144a54e2c64418668c
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/SPORT_PAGE/TennisBall.unity
+    guid: 436e65e9b51d74648a3d391cd1f07b16
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/ARScene_BaseballStadium.unity
+    guid: 8964992b56dd3ad46b93217891d872a9
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/ARScene_Basketball.unity
+    guid: f3c8167df1180c3499d4b89fd0a0f9b5
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/ARScene_FormulaCar.unity
+    guid: bad9669b59ac1274b8d63b9e910e0ea9
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_Sport/ARScene_TennisBall.unity
+    guid: 122574564146c0e40b923d4f4702ea02
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/AR_City/CITY_PAGE/CityPage.unity
+    guid: ce9edab5f6421d744b24f731988f2f71
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6f677588e8a16474694cbca77697353c, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9d7e1c5a065fc47b3b033f94db012e3b, type: 2}
