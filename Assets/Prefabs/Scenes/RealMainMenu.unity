@@ -564,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1043127670097870048, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
       propertyPath: m_text
-      value: "INST\xC4LLINGAR"
+      value: "INST\xC4LLNINGAR"
       objectReference: {fileID: 0}
     - target: {fileID: 2193347352448720016, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
