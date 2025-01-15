@@ -445,7 +445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6582888725400983185, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
-      value: Rio - 100kr
+      value: Rio De Janiero - 100kr
       objectReference: {fileID: 0}
     - target: {fileID: 7116849245625310076, guid: 6aae2cc5fbf8686468e8ab7684e14497, type: 3}
       propertyPath: m_text
