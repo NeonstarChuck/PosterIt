@@ -550,9 +550,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1014539244724008865, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014539244724008865, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014539244724008865, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1043127670097870048, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
       propertyPath: m_text
-      value: KASSA
+      value: "INST\xC4LLINGAR"
       objectReference: {fileID: 0}
     - target: {fileID: 2193347352448720016, guid: d4d761c537300cb44af5ad4fde7771ec, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
