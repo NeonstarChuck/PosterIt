@@ -1157,7 +1157,7 @@ GameObject:
   - component: {fileID: 1959364382}
   - component: {fileID: 1959364381}
   m_Layer: 0
-  m_Name: Quad_Rio
+  m_Name: Quad_Savanna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
