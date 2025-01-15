@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6813f8911c8e2c94a872ca7454303d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: RioDeJaniero
+  sceneToLoad: GrandCanyon
 --- !u!1 &1959364380
 GameObject:
   m_ObjectHideFlags: 0

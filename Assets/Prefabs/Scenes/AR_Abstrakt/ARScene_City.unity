@@ -1069,9 +1069,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1719924534}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 1719924533}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: GoToPreviousScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6813f8911c8e2c94a872ca7454303d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: RioDeJaniero
+  sceneToLoad: City
 --- !u!1 &1959364380
 GameObject:
   m_ObjectHideFlags: 0

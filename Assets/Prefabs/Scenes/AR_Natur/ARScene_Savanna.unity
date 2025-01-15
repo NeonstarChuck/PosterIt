@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6813f8911c8e2c94a872ca7454303d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: RioDeJaniero
+  sceneToLoad: Savanna
 --- !u!1 &1959364380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1205,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6e7b786db764bcd44a42c259a0813aa9, type: 2}
+  - {fileID: 2100000, guid: 22ab5aff181bc9645b057b1707496616, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
